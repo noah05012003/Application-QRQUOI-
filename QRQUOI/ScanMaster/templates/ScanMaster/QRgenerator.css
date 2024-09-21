@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cela aide à gérer les paddings et bordures sans affecter la disposition */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav {
+    background-color: #B8BDD2; /* Couleur de fond de la barre de navigation */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding horizontal pour un peu d'espace autour des éléments */
+    height: 64px;
+}
+
+nav a {
+    color: black; /* Couleur du texte pour tous les liens dans la nav */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    background-color: #1490D7; /* Couleur de fond au survol */
+}
+
+nav .logo {
+    margin-right: auto; /* Pousse tout ce qui suit vers la droite */
+    font-family: 'Space Mono', monospace;
+    display: flex; /* Utilisez flexbox pour aligner les éléments à l'horizontale */
+    align-items: center; /* Centre verticalement le texte avec le logo */
+    color: black; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+    font-size: 20px; /* Taille du texte */
+    transition: transform 0.5s ease-in-out, color 0.3s; /* Transition pour les effets de survol */
+
+}
+nav .logo:hover {
+    transform: scale(1.1); /* Agrandit légèrement le logo au survol */
+    cursor: pointer; /* Change le curseur en main pour indiquer la cliquabilité */
+}
+
+nav .logo img {
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+
+/* Liste pour les éléments de navigation */
+ul {
+    list-style-type: none; /* Enlève les puces */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 25px; /* Espace entre les éléments */
+}
+
+.container{
+    width: 200px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #B8BDD2;
+    border-radius: 10px ;
+}
+
+• container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.container input{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #494eea;
+    outline:0 ;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+• container button {
+    width: 100%;
+    height: 50px;
+    background: #494eea;
+    color: #fff ;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}

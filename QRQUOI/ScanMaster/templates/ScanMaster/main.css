@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cela aide à gérer les paddings et bordures sans affecter la disposition */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav {
+    background-color: #B8BDD2; /* Couleur de fond de la barre de navigation */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding horizontal pour un peu d'espace autour des éléments */
+    height: 64px;
+}
+
+nav a {
+    color: black; /* Couleur du texte pour tous les liens dans la nav */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    background-color: #1490D7; /* Couleur de fond au survol */
+}
+
+nav .logo {
+    margin-right: auto; /* Pousse tout ce qui suit vers la droite */
+    font-family: 'Space Mono', monospace;
+    display: flex; /* Utilisez flexbox pour aligner les éléments à l'horizontale */
+    align-items: center; /* Centre verticalement le texte avec le logo */
+    color: black; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement */
+    font-size: 20px; /* Taille du texte */
+    transition: transform 0.5s ease-in-out, color 0.3s; /* Transition pour les effets de survol */
+
+}
+nav .logo:hover {
+    transform: scale(1.1); /* Agrandit légèrement le logo au survol */
+    cursor: pointer; /* Change le curseur en main pour indiquer la cliquabilité */
+}
+
+nav .logo img {
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+
+/* Liste pour les éléments de navigation */
+ul {
+    list-style-type: none; /* Enlève les puces */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 25px; /* Espace entre les éléments */
+}
+
+
+
+

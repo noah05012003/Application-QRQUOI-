@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Historique des QR Codes</h1>
+<ul>
+    {% for qrcode in qrcodes %}
+    <li>
+        <img src="{{ qrcode.image.url }}" alt="QR Code">
+        URL: {{ qrcode.lien }} - Créé le {{ qrcode.date_creation }}
+    </li>
+    {% empty %}
+    <li>Aucun QR code généré.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

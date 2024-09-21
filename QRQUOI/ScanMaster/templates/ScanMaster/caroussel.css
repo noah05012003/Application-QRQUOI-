@@ -1,0 +1,88 @@
+.custom-carousel {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 400px; /* Augmentez ou diminuez pour changer la hauteur globale */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    top: 20px;
+    right: 20px;
+    left: auto; /* Réinitialiser les propriétés par défaut si nécessaire */
+    bottom: auto; /* Réinitialiser les propriétés par défaut si nécessaire */
+}
+
+.carousel-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+p{
+    color: black;
+}
+
+/* Conteneur parent pour organiser les deux conteneurs */
+.parent-container {
+    display: flex;
+    justify-content: center; /* Centrer les cartes */
+    gap: 30px; /* Espace entre les cartes */
+    margin-top: 40px; /* Espace entre le carrousel et les cartes */
+}
+
+/* Style des conteneurs en mode "card" */
+.container {
+    width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de carte */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Effet de "survol" pour donner du dynamisme */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Accentuation de l'ombre au survol */
+}
+
+/* Style des liens à l'intérieur des cartes */
+.container a {
+    text-decoration: none;
+    color: #3498db; /* Couleur bleue pour les liens */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container a:hover {
+    color: #1d6fa5; /* Couleur du lien au survol */
+}
