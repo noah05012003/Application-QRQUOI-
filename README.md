@@ -1,4 +1,4 @@
-# Application-QRQUOI-
+# Application-QRScan-
 
 Nous proposons une application avancée de génération et de lecture de QR codes. Cette application permet de créer des QR codes associés à des liens spécifiques. 
 
